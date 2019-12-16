@@ -84,7 +84,7 @@ class air_conditioner{
         //判断.
         lock.lock();
         try {
-            if (temperature!=0){
+            if (temperature!=0){//会导致虚假唤醒
                 //不等于零代表该减温度了，所以进入等待状态
                 condition.await();
             }

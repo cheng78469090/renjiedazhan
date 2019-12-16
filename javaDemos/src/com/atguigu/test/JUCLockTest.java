@@ -8,8 +8,21 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Auther: 宋金城
  * @Date: 2019/12/16 09:55
  * @Description:
+ * redis 五大数据类型，持久化，
+ * 主从复制原理，
+ * mysql调优，执行引擎
+ * 索引如何优化
+ *
+ * 上自习锁门，集齐龙珠
  */
 public class JUCLockTest {
+    /**
+     * 功能描述:
+     * @date: 2019/12/16 18:24
+     *
+     *线程操作资源类，
+     * 精准控制要要解开那些锁，那些锁需要等待，类似于呼啦圈，按照顺序来执行
+     */
     public static void main(String[] args) {
         jingzhuntongzhi jing=new jingzhuntongzhi();
 
@@ -97,8 +110,4 @@ class jingzhuntongzhi{
         }
 
     }
-
-
-
-
 }
