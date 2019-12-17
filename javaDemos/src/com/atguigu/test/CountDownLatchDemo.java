@@ -8,6 +8,12 @@ import java.util.concurrent.CountDownLatch;
  * @Description:
  * 此类用于练习CountDownLatch
  * CountDownLatch是用于当多个线程时，其他线程等待一个线程完成后再执行的其操作
+ * 一种同步帮助，允许一个或多个线程等待，直到在其他线程中执行的一组操作完成。
+ *
+ * 强调一个线程的操作等待其他线程操作完成才能执行，
+ * 一个线程等待其他线程完成某种操作，而等其他线程操作完成后这一个线程才能操作，其他线程可以在操作完后停止或者等待
+ * 具有不可重复性。
+ *
  */
 public class CountDownLatchDemo {
     private static final int NUMBER=10;

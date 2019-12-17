@@ -27,7 +27,7 @@ public class JUCLockTest {
         jingzhuntongzhi jing=new jingzhuntongzhi();
 
         new Thread(()->{
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 3; i++) {
                 try {
                     jing.print5();
                 } catch (InterruptedException e) {
@@ -36,7 +36,7 @@ public class JUCLockTest {
             }
         },"A线程").start();
         new Thread(()->{
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 3; i++) {
                 try {
                     jing.print10();
                 } catch (InterruptedException e) {
@@ -45,7 +45,7 @@ public class JUCLockTest {
             }
         },"B线程").start();
         new Thread(()->{
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 3; i++) {
                 try {
                     jing.print15();
                 } catch (InterruptedException e) {
